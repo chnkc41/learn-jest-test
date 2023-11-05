@@ -11,4 +11,7 @@ test("renders learn react link", () => {
   //   getByLabelText
   const labelElement = screen.getByLabelText("User name:");
   expect(labelElement).toBeInTheDocument();
+  //   getByPlaceholderText
+  const inputPlaceHolder = screen.getByPlaceholderText("Search");
+  expect(inputPlaceHolder).toBeInTheDocument();
 });
