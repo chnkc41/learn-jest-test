@@ -14,8 +14,8 @@ const Test1 = () => {
       <input id="user-name" type="text" placeholder="Search" value="Computer" />
       {/* getByText- checks inside of any element text */}
       <div>Welcome to Modern Testing</div>
-      {/* getByAltText  */}
-      <img src="" alt="Image Information" />
+      {/* getByAltText - toBe*/}
+      <img src="http://cihankoc.com.tr/" alt="Image Information" />
     </>
   );
 };

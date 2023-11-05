@@ -20,8 +20,9 @@ test("renders learn react link", () => {
   //   getByDisplayValue
   const getByDisplayValue = screen.getByDisplayValue("Computer");
   expect(getByDisplayValue).toBeInTheDocument();
-  //   getByAltText
+  //   getByAltText - toBe
   const getByAltText = screen.getByAltText("Image Information");
   expect(getByAltText).toBeInTheDocument();
+  expect(getByAltText.src).toBe("http://cihankoc.com.tr/")
 
 });
