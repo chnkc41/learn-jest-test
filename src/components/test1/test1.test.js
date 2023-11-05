@@ -14,7 +14,10 @@ test("renders learn react link", () => {
   //   getByPlaceholderText
   const inputPlaceHolder = screen.getByPlaceholderText("Search");
   expect(inputPlaceHolder).toBeInTheDocument();
-  //   getByPlaceholderText 
+  //   getByPlaceholderText
   const anyElementWithText = screen.getByText("Welcome to Modern Testing");
   expect(anyElementWithText).toBeInTheDocument();
+  //   getByDisplayValue
+  const getByDisplayValue = screen.getByDisplayValue("Computer");
+  expect(getByDisplayValue).toBeInTheDocument();
 });
