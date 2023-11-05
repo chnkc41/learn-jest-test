@@ -23,6 +23,11 @@ test("renders learn react link", () => {
   //   getByAltText - toBe
   const getByAltText = screen.getByAltText("Image Information");
   expect(getByAltText).toBeInTheDocument();
-  expect(getByAltText.src).toBe("http://cihankoc.com.tr/")
-
+  expect(getByAltText.src).toBe("http://cihankoc.com.tr/");
+  //   getByTitle
+  const getByTitle = screen.getByTitle("Jest Testing");
+  expect(getByTitle).toBeInTheDocument();
+  //   getByTestId
+  const getByTestId = screen.getByTestId("jest-testing");
+  expect(getByTestId).toBeInTheDocument();
 });

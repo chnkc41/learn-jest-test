@@ -16,6 +16,8 @@ const Test1 = () => {
       <div>Welcome to Modern Testing</div>
       {/* getByAltText - toBe*/}
       <img src="http://cihankoc.com.tr/" alt="Image Information" />
+      {/* byTitle - getByTestId*/}
+      <a href="#" title="Jest Testing" data-testid="jest-testing"></a>
     </>
   );
 };
