@@ -7,5 +7,7 @@ test("renders learn react link", () => {
   render(<Test2 products={productsMock} />);
   //   getAllByRole
   const elements = screen.getAllByRole("listitem"); 
-  expect(elements).toHaveLength(productsMock.length)
+  // expect(elements).toHaveLength(productsMock.length) 
+  // or
+  expect(elements.length).toBe(productsMock.length) 
 });
