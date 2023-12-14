@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Test2 from "./index";
-
+// GetBy: Returns "JS ERROR" if not present in DOM
 test("renders learn react link", () => {
   const productsMock = ["Computer", "Keyboard", "Phone"];
 
